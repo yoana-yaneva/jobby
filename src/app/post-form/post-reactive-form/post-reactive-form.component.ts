@@ -34,6 +34,8 @@ export class PostReactiveFormComponent implements OnInit, OnChanges {
 
   onSubmit(): void {
     this.formGroup.value;
+
+    console.log("test");
     
     const post: Post = {
       ...this.formGroup.value,

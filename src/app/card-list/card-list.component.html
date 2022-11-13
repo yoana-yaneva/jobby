@@ -1,0 +1,8 @@
+<h1 class="text-center mb-4 mt-4">Jobs</h1>
+
+<app-post-reactive-form [post]="selectedPost" 
+                        (postSubmitted)="onPostSubmit($event)"></app-post-reactive-form>
+
+<app-card-list-view [posts]="posts"
+                    (postSelected)="onPostSelected($event)"
+                    (postDeleted)="onPostDelete($event)"></app-card-list-view>
